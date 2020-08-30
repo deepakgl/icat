@@ -1,0 +1,55 @@
+icat_services.subscription_form:
+ path: '/icat-project'
+ defaults:
+   _title: ' Add New Project'
+   _form: '\Drupal\icat_services\Form\NewProjectForm'
+ requirements:
+   _permission: 'access content'
+
+icat_services.subscription_form_edit:
+ path: '/icat-project/{id}'
+ defaults:
+   _title: 'Edit Project'
+   _form: '\Drupal\icat_services\Form\EditProjectForm'
+ requirements:
+   _permission: 'access content'
+
+icat_services.delete_project_form:
+ path: '/icat-project/delete/{id}'
+ defaults:
+   _title: 'Delete Project'
+   _form: '\Drupal\icat_services\Form\DeleteProjectForm'
+ requirements:
+   _permission: 'access content'
+
+icat_services.subscription_form_view:
+ path: '/icat-project/view/{id}'
+ defaults:
+   _title: 'View Project'
+   _form: '\Drupal\icat_services\Form\ViewProjectForm'
+ requirements:
+   _permission: 'access content'
+
+icat_services.archive_project_form:
+ path: '/icat-project/archive/{id}'
+ defaults:
+   _title: 'Archive Project'
+   _form: '\Drupal\icat_services\Form\ArchiveProjectForm'
+ requirements:
+   _permission: 'access content'
+
+icat_services.unarchive_project_form:
+ path: '/icat-project/unarchive/{id}'
+ defaults:
+   _title: 'Unarchive Project'
+   _form: '\Drupal\icat_services\Form\UnarchiveProjectForm'
+ requirements:
+   _permission: 'access content'
+
+icat_services.icat_form_editing:
+ path: '/icat-project/edit/{id}'
+ defaults:
+   _title: 'Edit Project'
+   _form: '\Drupal\icat_services\Form\EditIcatForm'
+ requirements:
+   _permission: 'access content'

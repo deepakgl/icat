@@ -1,0 +1,10 @@
+name: Tokens in Views Filter Criteria
+description: Allow to use tokens in views filter criteria values.
+package: Other
+type: module
+core: '8.x'
+
+# Information added by Drupal.org packaging script on 2019-09-26
+version: '8.x-1.4'
+project: 'token_views_filter'
+datestamp: 1569485896

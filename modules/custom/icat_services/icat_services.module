@@ -1,0 +1,68 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function icat_services_views_query_alter($view, $query) {
+  // kint($view->id()); die;.
+  $uid = \Drupal::currentUser()->id();
+  $current_user = \Drupal::currentUser();
+  $roles = $current_user->getRoles();
+  if ($view->id() == 'transportations' || $view->id() == 'archive_projects') {
+    if (!in_array('administrator', $roles) && !in_array('icat', $roles)) {
+      foreach ($query->where as &$condition_group) {
+        foreach ($condition_group['conditions'] as &$condition) {
+          // print_r($condition); die;.
+          if ($condition['field'] == 'transportations.vendor') {
+            $condition['value'] = '%' . $uid . '%';
+          }
+        }
+      }
+    }
+    else {
+      unset($query->where[1]['conditions'][1]);
+    }
+  }
+  if ($view->id() == 'transportations_vendor') {
+    if (in_array('administrator', $roles) || in_array('icat', $roles)) {
+      unset($query->where[1]['conditions'][0]);
+    }
+  }
+}
+
+/**
+ *
+ */
+function icat_services_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $current_user = \Drupal::currentUser();
+  $roles = $current_user->getRoles();
+  if ($form_id == 'user_register_form' && in_array('icat', $roles)) {
+    $form['account']['notify'] = FALSE;
+    unset($form['account']['roles']['#options']['administrator']);
+    unset($form['account']['roles']['#options']['icat']);
+    $form['account']['roles']['#access'] = TRUE;
+  }
+}
+
+/**
+ *
+ */
+function icat_services_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $current_user = \Drupal::currentUser();
+  $roles = $current_user->getRoles();
+  $current_url = \Drupal::service('path.current')->getPath();
+  $current_path = explode("/", $current_url);
+  if ($current_path[2] != $current_user->id() && $form_id == 'user_form' && in_array('icat', $roles)) {
+    unset($form['account']['roles']['#options']['administrator']);
+    unset($form['account']['roles']['#options']['icat']);
+  } elseif ($current_path[2] == $current_user->id() && $form_id == 'user_form' && in_array('icat', $roles)) {
+    unset($form['account']['roles']['#options']['administrator']);
+    unset($form['account']['roles']['#options']['vendor']);
+  }
+}

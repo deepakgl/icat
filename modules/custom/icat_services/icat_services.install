@@ -1,0 +1,155 @@
+<?php
+
+/**
+ * @file
+ * Create new table in the database.
+ *
+ * @return array
+ *   Create table.
+ */
+
+/**
+ *
+ */
+function icat_services_schema() {
+  $schema['transportations'] = [
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'request_id' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ],
+      'origin' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'pickup_date' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'destination' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'mode_transport' => [
+        'type' => 'varchar',
+        'length' => 25,
+        'not null' => FALSE,
+      ],
+      'incoterms' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'eta_deadline' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'commodity' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'requirements' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'vendor' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'freight_details' => [
+        'type' => 'blob',
+        'not null' => FALSE,
+      ],
+      'total_pieces' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'total_weight' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'dimesnsional_weight' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'contact' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+
+    ],
+    'primary key' => ['id'],
+  ];
+
+  $schema['transportations_vendor'] = [
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'transportations_id' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ],
+      'pickup' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'localfees' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'handlingfees' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'otherfees' => [
+        'type' => 'varchar',
+        'length' => 25,
+        'not null' => FALSE,
+      ],
+      'airfreight' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+      'totalquote' => [
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => FALSE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}

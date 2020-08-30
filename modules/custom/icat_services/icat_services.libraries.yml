@@ -1,0 +1,9 @@
+icat_services:
+  version: 1.x
+  css:
+    theme:
+      css/icat_services.css: {}
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/jquery    

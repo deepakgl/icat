@@ -1,0 +1,1058 @@
+/*@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('fonts/Poppins-Regular.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('fonts/Montserrat-Medium.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+
+
+.buttons-edit fieldset#edit-buttonsedit {
+  display: none;
+}
+
+
+#edit-apply-buttonsedit {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+}
+
+#edit-apply-buttonsedit button {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+#edit-apply-buttonsedit button a {
+  background: #009999;
+  color: #fff;
+  font-size: 14px;
+  border: #0f659a solid 1px;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: none;
+}
+
+
+
+
+
+
+#edit-going-buttonsedit {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+}
+
+#edit-going-buttonsedit button {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+#edit-going-buttonsedit button a {
+  background: #009999;
+  color: #fff;
+  font-size: 14px;
+  border: #0f659a solid 1px;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: none;
+}
+
+
+
+.buttons-edit {
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+
+
+
+.view.view-transportations-vendor {
+  float: left;
+  width: 100%;
+}
+
+
+.total-main-test {
+  width: 47%;
+  float: right;
+}
+
+
+.select-vendor .form-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+.views-element-container#block-views-block-transportations-vendor-block-1 .view-content {
+  width: 100%;
+  float: left;
+}
+
+.views-element-container#block-views-block-transportations-vendor-block-1 h2 {
+  display: block;
+  float: left;
+  width: 100%;
+  color: #3b3b3b;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.views-element-container#block-views-block-transportations-vendor-block-1 table th {
+  background: #009999;
+}
+
+
+.freight-detail.edit-page-freight#names-fieldset-wrapper {
+  width: 100%;
+  float: left;
+  margin-right: 0;
+}
+
+
+.freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item:nth-child(n+4) {
+  width: 30.5%;
+  float: left;
+  margin-right: 20px;
+  padding-left: 7px;
+}
+
+
+.freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item {
+  width: 30.5%;
+  float: left;
+  margin-right: 20px;
+  padding-left: 7px;
+}
+
+.freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item.js-form-wrapper {
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item label {
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+
+
+
+
+#selected-values .list span span {
+  position: absolute;
+  top: -10px;
+  color: #dadada;
+  right: 0;
+  background-color: #009999;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#selected-vendor-heading h3 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+#selected-vendor-heading {
+  width: 46%;
+  float: right;
+}
+
+
+div#selected-values > span {
+  position: relative;
+  background-color: #c3c3c3;
+  color: #fff;
+  padding: 2px 15px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+div#selected-values > span:last-child {
+  margin-right: 0px;
+}
+
+div#selected-values > span span {
+  position: absolute;
+  top: -15px;
+  color: #dadada;
+  right: -15px;
+  background-color: #009999;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 100%;
+}
+
+
+div#selected-values > span span:hover {
+  background-color: #18699a;
+}
+
+#main.layout-main .select-vendor .js-form-item label {
+  text-transform: capitalize;
+}
+
+
+
+#seleted-rows {
+  overflow-y: scroll;
+  height: 169px;
+  width: 50%;
+  float: left;
+}
+
+
+#selected-values .list span {
+  position: relative;
+  background-color: #c3c3c3;
+  color: #fff;
+  padding: 2px 11px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-bottom: 15px;
+  width: 37%;
+  float: left;
+  text-transform: capitalize;
+}
+
+
+
+#block-bartik-content table.views-table tr th {
+  background: #009999;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+#selected-values {
+  width: 42%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 132px;
+  overflow-y: scroll;
+  padding-top: 10px;
+}
+
+tr.open-projects {
+  background: red;
+}
+
+
+
+.freight-detail .js-form-item {
+  padding-top: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#main.layout-main .freight-detail label {
+  font-weight: 400;
+  font-size: 13px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #fff;
+}
+
+.total-main div#replace-this {
+  width: 50%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+
+#block-bartik-content fieldset#edit-generalinfo .js-form-item label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+
+#block-bartik-content fieldset#edit-generalinfo .js-form-item:nth-child(-n+3) {
+  position: absolute;
+  width: 47%;
+}
+
+
+
+
+#block-bartik-content fieldset#edit-generalinfo .js-form-item:nth-child(n+4) {
+  float: right;
+  width: 47%;
+  margin-left: 4%;
+}
+
+#block-bartik-content fieldset#edit-generalinfo .js-form-item.form-item-generalinfo-request-id {
+  top: 7px;
+}
+
+
+#block-bartik-content fieldset#edit-generalinfo .js-form-item.form-item-generalinfo-origin {
+  top: 95px;
+}
+
+
+#block-bartik-content fieldset#edit-generalinfo .js-form-item.form-item-generalinfo-pickup-date {
+  top: 268px;
+}
+
+#block-bartik-content fieldset#edit-generalinfo .js-form-item textarea {
+  border: #cccccc solid 1px;
+  background: #f7f7f7;
+  height: 125px;
+}
+#main.layout-main .js-form-item textarea {
+  border: #cccccc solid 1px;
+  background: #f7f7f7;
+  height: 125px;
+}
+
+
+#block-bartik-content fieldset#edit-generalinfo .js-form-item select {
+  width: 100%;
+  height: 36px;
+  border: #cccccc solid 1px;
+  background: #f7f7f7;
+  border-radius: 5px;
+}
+
+
+
+#block-bartik-content fieldset#edit-generalinfo .js-form-item input {
+  width: 100%;
+}
+
+
+#main.layout-main .js-form-item input {
+  width: 100%;
+  background: #f7f7f7;
+  border: #cccccc solid 1px;
+  border-radius: 5px;
+  height: 36px;
+}
+
+
+.Logistics-main {
+  width: 100%;
+  float: left;
+}
+
+#block-bartik-content .col-md-4 {
+  width: 47.5%;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#block-bartik-content .col-sm-2 {
+  width: 18%;
+  float: left;
+  padding-left: 5px;
+  padding-right: 6px;
+}
+
+#block-bartik-content div#edit-names-fieldset-1-class {
+  display: none;
+}
+
+#block-bartik-content .form-actions {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.total-main {
+  width: 50%;
+  float: left;
+}
+
+div#names-fieldset-wrapper:nth-child(4) {
+  width: 47%;
+  float: right;
+}
+
+
+.total-main {
+  width: 50%;
+  float: left;
+  margin-right: 2%;
+}
+
+.freight-detail {
+  width: 49%;
+  float: left;
+}
+
+.freight-detail fieldset#edit-names-fieldset {
+  background: #f2f2f2;
+}
+
+div#commodity-main {
+  width: 45.2%;
+  float: right;
+  border: #999999 solid 1px;
+  border-radius: 5px;
+  margin-top: 19px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+main#content {
+  border: #000 solid 2px;
+  border-radius: 7px;
+  padding-bottom: 30px;
+}
+
+
+div#block-bartik-page-title {
+  background: #000;
+}
+
+
+
+
+div#block-bartik-page-title h1 {
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 0;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+#commodity-main .js-form-item.form-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+main#content #names-fieldset-wrapper fieldset {
+  border: #999999 solid 1px;
+}
+
+.total-devide {
+  width: 33%;
+  float: left;
+  background: #009999;
+  border-right: #fff solid 1px;
+  text-align: center;
+  color: #fff;
+}
+
+.total-devide {
+  width: 33%;
+  float: left;
+  background: #009999;
+  border-right: #fff solid 1px;
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+fieldset legend span.fieldset-legend {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+main#content fieldset {
+  border: 1px solid #999999;
+}
+
+#main.layout-main .js-form-item #edit-names-fieldset-actions-add-name {
+  background: #009999;
+}
+
+#main.layout-main .js-form-item input.js-form-submit {
+  background: #009999;
+}
+
+
+.freight-detail .form-no-label {
+  display: none;
+}
+
+#block-bartik-content .freight-detail .col-sm-2:nth-child(6) {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+#block-bartik-content .freight-detail .col-sm-2:nth-child(6) input {
+  display: inline-block;
+  background: #2999dd;
+  width: auto;
+}
+
+
+#main.layout-main {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.freight-detail label {
+  background: #009999;
+  color: #fff;
+  display: block;
+  padding: 0 7px;
+}
+
+main#content .freight-detail fieldset#edit-names-fieldset {
+  background: #f2f2f2;
+  border: #009999 solid 2px;
+}
+
+
+.total-main {
+  width: 49%;
+  float: left;
+  margin-right: 4%;
+  padding-bottom: 30px;
+}
+
+.select-vendor {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  overflow: auto;
+  max-height: 160px;
+  height: auto;
+}
+
+#main.layout-main .select-vendor .js-form-item input {
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 3px;
+}
+
+#main.layout-main .select-vendor .js-form-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.select-vendor select#state-wrapper {
+  min-width: 130px;
+}
+
+.select-vendor-main {
+  width: 49%;
+  float: left;
+}
+
+/*=============== E5803 css ends here =================== */
+
+.role-vendor #main.layout-main .js-form-item input#edit-rate-quote-fieldset-totalquote {
+  pointer-events: none;
+  background: #e0e0e0;
+}
+
+
+
+#names-fieldset-wrapper input,
+#names-fieldset-wrapper select,
+#names-fieldset-wrapper textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 7px 14px 9px;
+  transition: 0.4s;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#names-fieldset-wrapper th {
+  background: #009999;
+  font-family: 'Roboto', sans-serif;
+}
+
+#names-fieldset-wrapper input:focus,
+#names-fieldset-wrapper textarea:focus,
+#names-fieldset-wrapper select:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+  background: #f2f3f4;
+}
+
+#names-fieldset-wrapper table#edit-mytable {
+  border: #009999 solid 3px;
+}
+
+#names-fieldset-wrapper fieldset {
+  border: #818587 solid 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#names-fieldset-wrapper input#add-row {
+  background: #009999;
+  color: #fff;
+  font-size: 14px;
+}
+
+#names-fieldset-wrapper input#edit-submit {
+  background: #009999;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+#names-fieldset-wrapper label {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#names-fieldset-wrapper span.fieldset-legend {
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#edit-description {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+
+div#names-fieldset-wrapper {
+  position: relative;
+}
+
+#names-fieldset-wrapper fieldset#edit-fieldset-one .js-form-item:nth-child(-n+3) {
+  position: absolute;
+  width: 45.5%;
+}
+
+
+#names-fieldset-wrapper fieldset#edit-fieldset-one .js-form-item.form-item-title {
+  top: 36px;
+}
+
+#names-fieldset-wrapper fieldset#edit-fieldset-one .js-form-item.form-item-origin {
+  top: 121px;
+}
+
+#names-fieldset-wrapper fieldset#edit-fieldset-one .js-form-item.form-item-pickupdate {
+  top: 285px;
+}
+
+
+#names-fieldset-wrapper .js-form-item:nth-child(n+4) {
+  float: right;
+  width: 51%;
+}
+
+
+
+
+div#names-fieldset-wrapper:nth-child(3) {
+  width: 47%;
+  float: left;
+}
+
+div#names-fieldset-wrapper:nth-child(4) {
+  width: 51%;
+  float: right;
+}
+
+
+#main.layout-main label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+
+
+input.button.form-submit {
+  background: #009999;
+  color: #fff;
+  font-size: 14px;
+  border: #0f659a solid 1px;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+input.button.form-submit:hover {
+  background: #0f659a;
+  border: #009999 solid 1px;
+}
+
+
+form#form-api-example-simple-form {
+  border: #009999 solid 2px;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+form#form-api-example-simple-form {
+  border: #009999 solid 2px;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+
+#names-fieldset-wrapper .fieldset-wrapper .form-item-commodity {
+  margin-top: 0;
+}
+
+
+#names-fieldset-wrapper fieldset#edit-fieldset-four {
+  margin-top: 0;
+}
+
+
+.form-actions {
+  padding-top: 10px;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+
+div#names-fieldset-wrapper:nth-child(5) {
+  width: 51%;
+  float: right;
+}
+
+div#names-fieldset-wrapper:nth-child(6) {
+  width: 47%;
+  float: left;
+}
+
+
+#commodity-main input {
+  width: 100%;
+}
+
+
+.submit-main {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+#block-bartik-content fieldset#edit-generalinfo {
+  position: relative;
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+
+
+  .freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item {
+    width: 30.3%;
+}
+
+  .freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item:nth-child(n+4) {
+    width: 30.3%;
+}
+
+
+  #block-bartik-content .col-md-4 {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+
+  #main {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+  #block-bartik-content .col-sm-2 {
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 19.5%;
+}
+
+  #main.layout-main .freight-detail label {
+    font-size: 11px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+  #names-fieldset-wrapper fieldset {
+    border: #818587 solid 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+  form#form-api-example-simple-form {
+    width: 96%;
+  }
+
+  #names-fieldset-wrapper .js-form-item:nth-child(n+4) {
+    margin-top: 0;
+  }
+
+  #names-fieldset-wrapper fieldset#edit-fieldset-one .js-form-item.form-item-origin {
+    top: 107px;
+  }
+
+  #names-fieldset-wrapper fieldset#edit-fieldset-one .js-form-item.form-item-pickupdate {
+    top: 249px;
+  }
+
+  #names-fieldset-wrapper table#edit-mytable {
+    margin-top: 0;
+  }
+
+}
+
+
+@media only screen and (max-width: 991px) {
+
+  .freight-detail.edit-page-freight#names-fieldset-wrapper {
+    top: 0;
+    position: static;
+}
+
+  .freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item {
+    margin-right: 10px;
+}
+
+  .freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item:nth-child(n+4) {
+    margin-right: 10px;
+}
+
+
+  main#content {
+    float: left;
+}
+
+  #block-bartik-content .col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+  #block-bartik-content .col-sm-2 {
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 27%;
+}
+
+  #main.layout-main .freight-detail label {
+    font-size: 12px;
+}
+
+  #block-bartik-content fieldset#edit-generalinfo .js-form-item:nth-child(-n+3) {
+    width: 45%;
+}
+
+
+
+  #names-fieldset-wrapper fieldset#edit-fieldset-one .js-form-item.form-item-origin textarea {
+    height: 112px;
+}
+
+
+  div#names-fieldset-wrapper:nth-child(3) {
+    width: 100%;
+}
+
+  div#names-fieldset-wrapper:nth-child(6) {
+    width: 100%;
+    position: relative;
+    top: -331px;
+}
+
+  div#names-fieldset-wrapper:nth-child(5) {
+    width: 100%;
+    margin-top: 50px;
+}
+
+  .form-actions {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+  .role-icat #block-bartik-content .col-md-4 {
+    width: 100%;
+}
+
+
+
+  .freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item.js-form-wrapper {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+  .freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+  .freight-detail.edit-page-freight#names-fieldset-wrapper .js-form-item:nth-child(n+4) {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+
+
+  div#block-bartik-page-title h1 {
+    font-size: 20px;
+}
+
+
+  #main.layout-main .freight-detail .col-sm-12.inner-fieldset {
+    width: 100%;
+    float: left;
+    border-bottom: #ccc solid 2px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+
+  div#commodity-main {
+    width: 100%;
+    float: left;
+}
+
+  .select-vendor {
+    width: 100%;
+    float: left;
+}
+
+  .total-main {
+    width: 100%;
+    float: left;
+    margin-right: 0;
+}
+
+  .total-main div#replace-this {
+    width: 100%;
+    float: left;
+}
+  #block-bartik-content .col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+
+  #block-bartik-content .col-sm-2 {
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 49%;
+}
+
+  #block-bartik-content fieldset#edit-generalinfo .js-form-item:nth-child(-n+3) {
+    position: static;
+    width: 100%;
+}
+
+  #block-bartik-content fieldset#edit-generalinfo .js-form-item:nth-child(n+4) {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+}
+
+  .freight-detail {
+    width: 100%;
+    float: left;
+}
+
+
+  form#form-api-example-simple-form {
+    width: 88%;
+  }
+
+  #names-fieldset-wrapper fieldset#edit-fieldset-one .js-form-item:nth-child(-n+3) {
+    position: static;
+    width: 100%;
+}
+
+  #names-fieldset-wrapper .js-form-item:nth-child(n+4) {
+    float: right;
+    width: 100%;
+}
+
+  div#names-fieldset-wrapper:nth-child(3) {
+    overflow-x: auto;
+}
+
+  #edit-actions input {
+    position: relative;
+    top: -25px;
+}
+
+
+}
+
+.role-icat.path-user ul.tabs.primary li.tabs__tab:nth-child(3) {
+  display: none;
+}
